@@ -1,0 +1,11 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Maps-style desktop icon</title>
+  <desc id="desc">An original multicolor map pin icon for the desktop wrapper.</desc>
+  <rect width="256" height="256" rx="56" fill="#ffffff"/>
+  <path d="M128 25c-45 0-82 36-82 81 0 59 82 125 82 125s82-66 82-125c0-45-37-81-82-81Z" fill="#34a853"/>
+  <path d="M128 25c-45 0-82 36-82 81 0 27 18 58 39 85l43-43V25Z" fill="#4285f4"/>
+  <path d="M128 25v123l43 43c21-27 39-58 39-85 0-45-37-81-82-81Z" fill="#fbbc04"/>
+  <path d="M85 191c21 25 43 40 43 40s22-15 43-40l-43-43-43 43Z" fill="#ea4335"/>
+  <circle cx="128" cy="106" r="34" fill="#ffffff"/>
+  <circle cx="128" cy="106" r="16" fill="#1a73e8"/>
+</svg>

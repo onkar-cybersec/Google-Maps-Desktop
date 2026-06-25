@@ -1,0 +1,59 @@
+{
+  "name": "google-maps-desktop",
+  "version": "1.0.0",
+  "description": "Unofficial Windows desktop wrapper for Google Maps Web.",
+  "main": "src/main.js",
+  "author": "",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:portable": "electron-builder --win portable"
+  },
+  "keywords": [
+    "electron",
+    "windows",
+    "google-maps",
+    "desktop"
+  ],
+  "devDependencies": {
+    "electron": "^41.7.1",
+    "electron-builder": "26.6.0"
+  },
+  "build": {
+    "appId": "com.unofficial.googlemapsdesktop",
+    "productName": "Google Maps Desktop",
+    "directories": {
+      "output": "outputs"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "package.json",
+      "README.md"
+    ],
+    "afterPack": "scripts/apply-icon.js",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "artifactName": "${productName}-Setup-${version}.${ext}",
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Google Maps Desktop"
+    },
+    "portable": {
+      "artifactName": "${productName}-Portable-${version}.${ext}"
+    }
+  }
+}

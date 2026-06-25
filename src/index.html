@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; frame-src https://www.google.com https://google.com https://maps.google.com https://accounts.google.com https://*.google.com https://*.gstatic.com https://*.googleusercontent.com;"
+    />
+    <title>Google Maps Desktop</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="toolbar" aria-label="Navigation toolbar">
+      <button id="backButton" class="toolbar-button" type="button" title="Back" aria-label="Back" disabled>
+        <span aria-hidden="true">&lsaquo;</span>
+      </button>
+      <button id="forwardButton" class="toolbar-button" type="button" title="Forward" aria-label="Forward" disabled>
+        <span aria-hidden="true">&rsaquo;</span>
+      </button>
+      <button id="refreshButton" class="toolbar-button" type="button" title="Refresh" aria-label="Refresh">
+        <span aria-hidden="true">&#8635;</span>
+      </button>
+      <button id="homeButton" class="toolbar-button" type="button" title="Home" aria-label="Home">
+        <span aria-hidden="true">&#8962;</span>
+      </button>
+      <div class="toolbar-title" aria-hidden="true">Google Maps Desktop</div>
+      <div id="statusText" class="status-text">Loading Maps</div>
+    </header>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
