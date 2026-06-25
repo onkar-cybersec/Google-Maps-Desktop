@@ -6,6 +6,34 @@ Google Maps Desktop is an unofficial Windows desktop app for Google Maps Web. It
 
 This project is not affiliated with, endorsed by, or sponsored by Google. It does not copy Google's Android app code, proprietary UI assets, icons, or design files.
 
+## Screenshots
+
+### Google Maps Desktop Home
+
+![Google Maps Desktop Home](screenshots/01-google-maps-desktop-home.jpg)
+
+The main app window loads Google Maps Web directly inside a standalone Windows desktop window with a minimal toolbar for Back, Forward, Refresh, and Home navigation.
+
+### Map Layers and Tools
+
+![Google Maps Layers and Tools](screenshots/02-google-maps-layers-and-tools.jpg)
+
+This screenshot shows Google Maps Web layers and tools available inside the desktop app, including:
+
+- Transit
+- Traffic
+- Biking
+- Terrain
+- Street View
+- Wildfires
+- Air Quality
+- Travel time
+- Measure
+- Default map view
+- Satellite map view
+
+Feature availability depends on Google Maps Web, region support, Google account status, and location permission settings.
+
 ## Features
 
 - Dedicated Windows desktop window for Google Maps Web.
